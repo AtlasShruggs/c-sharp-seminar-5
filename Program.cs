@@ -72,3 +72,19 @@ else if (exNum == 37)
     if (array.Length % 2 != 0) Console.Write(array[array.Length / 2]);
 
 }
+
+else if (exNum == 38)
+{
+    Console.WriteLine("Задайте массив - введите значения через пробел");
+    string[] str = Console.ReadLine().Split(" ");
+    double[] array = new double[str.Length];
+
+    for (int i = 0; i < str.Length; i++)
+    {
+        array[i] = double.Parse(str[i].ToString());
+    } 
+
+    Console.WriteLine($"Максимальное значение массива: {array.Max()}");
+    Console.WriteLine($"Минимальное значение массива: {array.Min()}");
+
+}
